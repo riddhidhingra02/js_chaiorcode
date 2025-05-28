@@ -6,7 +6,7 @@ account_city="saharanpur"
 /*
 let-block scope
 var-functional scope
-use let 
+use let  
 if we do not write the value in let element it takes it as undefined 
 */
 account_email="rid@ri.com"
