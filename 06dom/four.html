@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="language">
+        <li>Javascript</li>
+        
+    </ul>
+</body>
+<script>
+    function add(lang){
+        const li=document.createElement("li")
+        li.innerHTML=`${lang}`
+        document.querySelector('.language').appendChild(li)
+
+    }
+    add("python")
+    add("cpp")
+     function addoptim(lang){
+        const li=document.createElement("li")
+        li.appendChild(document.createTextNode(lang))
+        document.querySelector('.language').appendChild(li)
+
+    }
+    //edit
+    addoptim("golang")
+    addoptim("ruby")
+   const s = document.querySelector("li:nth-child(3)")
+//    s.innerHTML="hello"
+const newli=document.createElement("li")
+newli.textContent="typescript"
+s.replaceWith(newli)
+const firstlang=document.querySelector("li:first-child")
+firstlang.outerHTML="<li>cpp</li>"
+const lastlang=document.querySelector("li:last-child")
+lastlang.remove()
+</script>
+</html>

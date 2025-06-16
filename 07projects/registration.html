@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #box{
+            display: block;
+            text-align: center;
+             border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+
+        }
+        label{
+            display: block;
+
+        }
+    </style>
+</head>
+
+<body>
+  <div id="box">
+    <h1 style="text-align: center;">REGISTRATION FORM</h1>
+  
+    <div>
+      <label for="text">NAME</label>
+      <input type="text" name="text" id="text" />
+    </div>
+    <div>
+      <label for="age">AGE</label>
+      <input type="text" name="age" id="age" />
+    </div>
+    <div>
+      <label for="phone">PHONE NUMBER</label>
+      <input type="text" name="phone" id="phone" />
+    </div>
+    <button type="button" onclick="showMessage()">Submit!</button>
+
+  </div>
+  <script>
+     function showMessage() {
+    alert("Form submitted successfully!");
+  }
+  </script>
+</body>
+</html>
