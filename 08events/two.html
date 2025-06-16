@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASYNC PROJECTS</title>
+</head>
+<body>
+    <h1>CHAI OR CODE</h1>
+    <button id="stop">Stop</button>
+
+    
+</body>
+<script>
+    let time= function(){document.querySelector("h1").innerHTML="best js series"}
+    let timee=setTimeout(time,2000)
+    let timeoout=document.querySelector("#stop")
+    timeoout.addEventListener("click",function(){
+        
+        clearTimeout(timee)
+        console.log("stopped")
+    })
+
+    
+</script>
+</html>
